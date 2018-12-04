@@ -1,0 +1,12 @@
+C:\Users\eloym\source\repos\WindowsClient\WindowsClient\bin\Release\WindowsClient.exe.config
+C:\Users\eloym\source\repos\WindowsClient\WindowsClient\bin\Release\WindowsClient.exe
+C:\Users\eloym\source\repos\WindowsClient\WindowsClient\bin\Release\WindowsClient.pdb
+C:\Users\eloym\source\repos\WindowsClient\WindowsClient\bin\Release\Newtonsoft.Json.dll
+C:\Users\eloym\source\repos\WindowsClient\WindowsClient\bin\Release\Newtonsoft.Json.xml
+C:\Users\eloym\source\repos\WindowsClient\WindowsClient\obj\Release\WindowsClient.csprojResolveAssemblyReference.cache
+C:\Users\eloym\source\repos\WindowsClient\WindowsClient\obj\Release\WindowsClient.Login.resources
+C:\Users\eloym\source\repos\WindowsClient\WindowsClient\obj\Release\WindowsClient.Properties.Resources.resources
+C:\Users\eloym\source\repos\WindowsClient\WindowsClient\obj\Release\WindowsClient.csproj.GenerateResource.Cache
+C:\Users\eloym\source\repos\WindowsClient\WindowsClient\obj\Release\WindowsClient.csproj.CoreCompileInputs.cache
+C:\Users\eloym\source\repos\WindowsClient\WindowsClient\obj\Release\WindowsClient.exe
+C:\Users\eloym\source\repos\WindowsClient\WindowsClient\obj\Release\WindowsClient.pdb

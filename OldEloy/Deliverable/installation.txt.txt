@@ -1,0 +1,12 @@
+Add api and webclient folders to XAMPP htdocs folder.
+
+Run XAMPP apache server.
+
+Run XAMPP mysql.
+
+Copy the sql query in the userevent file into phpmyadmin.
+
+To access Web Client, go to localhost/webclient from your internet browser
+
+To access Windows Forms Client, open the folder WindowsClient and double-click the WindowsClient application. 
+

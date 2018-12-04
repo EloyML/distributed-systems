@@ -1,0 +1,20 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+# rules
+# Event with Date and time
+RewriteRule ^user/(\d+)/event/(\d{4}-\d\d-\d\d)/(\d\d:\d\d:\d\d)$ index.php?user=$1&eventdate=$2&eventtime=$3 [nc,qsa]
+# Event with Date
+RewriteRule ^user/(\d+)/event/(\d{4}-\d\d-\d\d)$ index.php?user=$1&eventdate=$2&eventtime=notime [nc,qsa]
+# User with UserID, username and password
+RewriteRule ^user/(\d+)/([A-Za-z0-9]+)/([A-Za-z0-9-]+)$ index.php?userid=$1&username=$2&password=$3 [nc,qsa]
+# Event with userID, eventID, event date, event time, info, and location
+RewriteRule ^user/(\d+)/event/(\d+)/(\d{4}-\d\d-\d\d)/(\d\d:\d\d:\d\d)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)$ index.php?userid=$1&eventid=$2&eventdate=$3&eventtime=$4&eventinfo=$5&eventlocation=$6 [nc,qsa]
+#User with userID
+RewriteRule ^user/(\d+)$ index.php?userid=$1 [nc,qsa]
+#User with username and password
+RewriteRule ^user/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)$ index.php?username=$1&password=$2 [nc,qsa]
+#Event with userID and eventid
+RewriteRule ^user/(\d+)/event/(\d+)$ index.php?userid=$1&eventid=$2 [nc,qsa]
+# Event with userID,  event date, event time, info, and location
+RewriteRule ^user/(\d+)/event/(\d{4}-\d\d-\d\d)/(\d\d:\d\d:\d\d)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)$ index.php?userid=$1&eventdate=$2&eventtime=$3&eventinfo=$4&eventlocation=$5 [nc,qsa]
