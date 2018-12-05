@@ -25,4 +25,4 @@ else
 }
 session_destroy();
 
-safe_redirect("https://localhost/cloud/HomePage.html" , false);
+safe_redirect("https://localhost/HomePage.html" , false);

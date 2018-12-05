@@ -81,7 +81,7 @@ function safe_redirect($url, $permament=true)
 
 		if($passThrough) {
 
-            safe_redirect("https://localhost/cloud/back_end/loginSession.php" , false);
+            safe_redirect("https://localhost/back_end/loginSession.php" , false);
 		}
 	}
 ?>

@@ -66,19 +66,19 @@
 					chmod('/uploads/'.$row["ID"], 0777);
 				}
 
-                safe_redirect("https://localhost/beta/cloudPage.php", false);
+                safe_redirect("https://localhost/cloudPage.php", false);
             } else {
                 $connection->query("DELETE FROM USERS WHERE Email = '" . $_SESSION["email"] . "'");
                 session_destroy();
                 $connection->close();
-                safe_redirect("https://localhost/beta/RegisterPage.php", false);
+                safe_redirect("https://localhost/RegisterPage.php", false);
             }
         } else {
             $stmt->close();
             $connection->query("DELETE FROM USERS WHERE Email = '" . $_SESSION["email"] . "'");
             session_destroy();
             $connection->close();
-            safe_redirect("https://localhost/beta/RegisterPage.php", false);
+            safe_redirect("https://localhost/RegisterPage.php", false);
         }
     }
 ?>

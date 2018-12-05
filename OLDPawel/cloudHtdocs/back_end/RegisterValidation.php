@@ -95,7 +95,7 @@ function safe_redirect($url, $permament=true)
 //////Path decider////////////////////
             if ($passThrough) {
 
-                safe_redirect("https://localhost/beta/back_end/RegisterSession.php", false);
+                safe_redirect("https://localhost/back_end/RegisterSession.php", false);
 
             }
         }
