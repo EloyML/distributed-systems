@@ -59,13 +59,6 @@
                 $row = $result->fetch_assoc();
                 $_SESSION["userid"] = $row["ID"];
                 $connection->close();
-				if (!file_exists("uploads/".$row["ID"])) {
-					
-					mkdir("/uploads/".$row["ID"], 0777, true);
-					chmod("/uploads/", 0777);
-					chmod('/uploads/'.$row["ID"], 0777);
-				}
-
                 safe_redirect("https://localhost/cloudPage.php", false);
             } else {
                 $connection->query("DELETE FROM USERS WHERE Email = '" . $_SESSION["email"] . "'");
