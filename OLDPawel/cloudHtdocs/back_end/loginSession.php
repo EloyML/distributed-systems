@@ -21,7 +21,6 @@ function safe_redirect($url, $permament=true)
     }
 }
 
-require_once "Response.php";
 if (require_once "_dbCon.php") {
 
     $stmt = $connection->prepare("SELECT * FROM USERS WHERE Email = ?");
@@ -65,5 +64,5 @@ if (require_once "_dbCon.php") {
 */ 
     $connection->close();
     //$result->close();
-    safe_redirect("https://localhost/Cloud/CloudPage.php", false);
+    safe_redirect("https://localhost/CloudPage.php", false);
 }

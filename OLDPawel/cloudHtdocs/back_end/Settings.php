@@ -17,7 +17,7 @@ if(isset($_POST["newPassword"])) {
 }
 else
 {
-    safe_redirect("https://localhost/appdev/sSettingsPage.html" , false);
+    safe_redirect("https://localhost/sSettingsPage.html" , false);
 }
 
 if(isset($_POST["deleteAccount"])) {
@@ -26,7 +26,7 @@ if(isset($_POST["deleteAccount"])) {
 }
 else
 {
-    safe_redirect("https://localhost/appdev/sSettingsPage.html" , false);
+    safe_redirect("https://localhost/sSettingsPage.html" , false);
 }
 
 function safe_redirect($url, $permament=true)
@@ -70,7 +70,7 @@ function updatePassword($currPass,$newPass,$repeatPass) {
 			}
 	}
 
-    safe_redirect("https://localhost/cloud/sSettingsPage.html" , false);
+    safe_redirect("https://localhost/sSettingsPage.html" , false);
   }
 
 function deleteUser($currPass) {
@@ -85,7 +85,7 @@ function deleteUser($currPass) {
 			toDatabase($query);
 	}
 
-    safe_redirect("https://localhost/appdev/HomePage.html" , false);
+    safe_redirect("https://localhost/HomePage.html" , false);
   }
   
 ?>
