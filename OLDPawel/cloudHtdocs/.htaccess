@@ -1,0 +1,21 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+# rules
+
+
+RewriteRule ^class$   		index.php?class=all[nc,qsa]
+RewriteRule ^class/(\d+)$   index.php?class=$1 [nc,qsa]
+
+RewriteRule ^event$   		index.php?event=all[nc,qsa]
+RewriteRule ^event/(\d+)$   index.php?event=$1 [nc,qsa]
+
+RewriteRule ^user$   	   index.php?user=all[nc,qsa]
+RewriteRule ^user/(\d+)$   index.php?user=$1 [nc,qsa]
+
+RewriteRule ^user/(.*)/(.*) back_end/loginSession.php?email=$1&password$2
+
+
+
+
+
